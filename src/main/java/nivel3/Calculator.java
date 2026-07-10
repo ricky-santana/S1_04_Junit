@@ -10,4 +10,8 @@ public class Calculator {
     public double getTotalAcumulate(){
         return this.totalAcumulate;
     }
+
+    public void add(double amount){
+        this.totalAcumulate+=amount;
+    }
 }
