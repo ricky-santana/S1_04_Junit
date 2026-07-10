@@ -23,4 +23,14 @@ public class DniCalculatorTest {
         assertEquals(expectedDni, dniCalculator.calculateDni());
     }
 
+    @ParameterizedTest
+    @CsvSource({"12345678, z", "87654321, x", "11111111, h", "99999999, r", "55555555, k",
+            "45678912, A", "74185297, A", "36925815, A", "10203040, A", "77777777, A"})
+    void shouldNotWork (String input, Character letter) {
+        String expectedDni = input + "-" + letter;
+        DniCalculator dniCalculator = new DniCalculator(input);
+        assertNotEquals(expectedDni, dniCalculator.calculateDni());
+    }
+
+
     }

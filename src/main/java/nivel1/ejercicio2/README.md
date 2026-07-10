@@ -10,4 +10,5 @@ El test debe comprobar como mínimo 10 casos de números de DNI distintos con su
 También se deben validar valores inválidos , como números negativos o demasiado grandes, para comprobar que el método gestiona correctamente estas situaciones (por ejemplo, lanzando una excepción).
 ## 🧩 Explicaciones y comentarios
 - He querido inyectar Objects O en mis objetos para poder lanzar el InvalidTipeNif en vez del InputMismatchException, y así tener el mensaje que quiero dentro de la excepción.
-- 
+- He intentado aplicar la mejor encapsulación dejando público solo los métodos necesarios de la clase DniCalculator.
+- He testeado la instanciación, la creacción de Dni correctamente y la incorrecta también con la letra acertada pero en minúscula y con la letra errónea en mayúscula.
