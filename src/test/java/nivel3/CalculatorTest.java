@@ -2,6 +2,9 @@ package nivel3;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -66,6 +69,16 @@ public class CalculatorTest {
         assertThat(calculator.getTotalAcumulate()).isNotZero();
         calculator.reset();
         assertThat(calculator.getTotalAcumulate()).isZero();
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {1, 3, 5, -3, 15})
+    void getTotalsTest(int a){
+        int b = 100;
+        calculator.add(b);
+        assertThat(calculator.getTotalAcumulate()).isEqualTo(b);
+        calculator.add(a);
+        assertThat(calculator.getTotalAcumulate()).isEqualTo(a+b);
     }
 
 }
