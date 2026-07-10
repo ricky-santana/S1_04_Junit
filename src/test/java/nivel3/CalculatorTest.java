@@ -60,4 +60,12 @@ public class CalculatorTest {
         assertThrows(ArithmeticException.class, ()-> calculator.divide(0));
     }
 
+    @Test
+    void resetTest(){
+        calculator.add(30049);
+        assertThat(calculator.getTotalAcumulate()).isNotZero();
+        calculator.reset();
+        assertThat(calculator.getTotalAcumulate()).isZero();
+    }
+
 }
