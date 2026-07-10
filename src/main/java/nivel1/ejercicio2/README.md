@@ -1,5 +1,5 @@
-# S1_04_Nivel_1-Ejercicio_1
-**Tests unitarios con JUnits**
+# S1_04_Nivel_1-Ejercicio_2
+**Test parametrizado**
 ## 📌 Enunciado
 Crea una clase llamada CalculoDni que contenga un método público para calcular la letra correspondiente de un DNI, dado el número (sin letra).
 
