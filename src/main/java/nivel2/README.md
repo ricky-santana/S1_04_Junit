@@ -30,4 +30,5 @@ Provoca una ArrayIndexOutOfBoundsExceptionen una clase cualquiera. Crea una aser
 Ejercicio 7
 Crea un objeto Optionalvacío. Escribe la aserción correcta para verificar que efectivamente está vacío.
 ## 🧩 Explicaciones y comentarios
-- He probado tanto que lance la excepción (cuando debería) como al revés, practicando el DoesNotThrow
+- Me he dado cuenta a medida que lo hacía que no me hacía falta una clase, con el test bastaba
+- Con tanto test y sin relación con ningún ejemplo o clase clara me costó ponerles nombre
