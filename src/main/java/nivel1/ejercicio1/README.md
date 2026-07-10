@@ -23,3 +23,5 @@ No deben permitirse libros con títulos duplicados.
 - He intentado aplicar todos los consejos de buenas prácticas. De ahora en adelante iniciaré los proyectos con dichos consejos en mente.
 - Para el deleteBook() se me ocurrió crear una excepción de tipo Runtime para arrojarla si se intenta borrar un libro que no existe
 - Te go algún warning de la función lambda pero como aún no he aprendido esto y veo que me funciona todo lo he ignorado.
+- Al generar el nuevo proyecto tuve un bug raro al hacer getList() y luego getFirst() o getLast(). Intuyo que es algún tipo de configuración al reformar el proyecto.
+- 
