@@ -14,4 +14,3 @@ El método getTotal()debe devolver el valor actual del total.
 
 ## 🧩 Explicaciones y comentarios
 - He intentado usar siempre la librería AssertJ. Aunque sinceramente me parece más sencilla la sintaxis de Junit para detectar Excepciones.
-- 
