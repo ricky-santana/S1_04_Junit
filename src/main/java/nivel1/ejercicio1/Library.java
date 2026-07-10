@@ -29,26 +29,26 @@ public class Library {
     public void addBookOnIndex (Book book, int index){
         this.books.add(index, book);
     }
-    public void deleteBook(String tittle){
+    public void deleteBook(String tittle) {
         boolean found = false;
 
-        for (int i = 0; i < this.books.size(); i++){
-            if (this.books.get(i).getTitle().equals(tittle)){
+        for (int i = 0; i < this.books.size(); i++) {
+            if (this.books.get(i).getTitle().equals(tittle)) {
                 found = true;
                 this.books.remove(i);
                 break;
             }
-            if(!found){
-                System.out.println("El libro no existe");
             }
+        if (!found) {
+            System.out.println("El libro no existe");
         }
     }
 
-    public List<Book> orderedList(){
-        List<Book> orderedList = new ArrayList<Book>(this.books);
-        Collections.sort(orderedList);
-        return orderedList;
-    }
+        public List<Book> orderedList () {
+            List<Book> orderedList = new ArrayList<>(this.books);
+            Collections.sort(orderedList);
+            return orderedList;
+        }
 
 
 

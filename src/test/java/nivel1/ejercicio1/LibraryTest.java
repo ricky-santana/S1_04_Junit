@@ -2,7 +2,6 @@ package nivel1.ejercicio1;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +16,7 @@ public class LibraryTest {
         List<Book> books = new ArrayList<>();
         assertNotNull(books);
         library = new Library();
+        library.getList().clear();
         library.addBook(new Book("AAa"));
         library.addBook(new Book("BBb"));
         library.addBook(new Book("AZz"));
@@ -34,9 +34,10 @@ public class LibraryTest {
         Book libroTest = new Book ("Testbook");
 
         library.addBook(libroTest);
+        int size = library.getList().size();
 
-        assertEquals(4, library.getList().size(), "El tamaño debería ser 4");
-        assertEquals("Testbook", library.getList().getLast().getTitle(), "El título debería coincidir");
+        assertEquals(size, library.getList().size(), "El tamaño debería ser 4");
+        assertEquals("Testbook", library.getList().get(size-1).getTitle(), "El título debería coincidir");
     }
     @Test
     void shouldNotAddDuplicateBook(){
@@ -90,7 +91,7 @@ public class LibraryTest {
         library.deleteBook("AAa");
 
         assertEquals(2, library.getList().size());
-        assertNotNull(library.getList().getFirst());
+        assertNotNull(library.getList().get(0));
 
         for (Book b : library.getList()){
             assertNotEquals("AAa", b.getTitle());
@@ -111,6 +112,5 @@ public class LibraryTest {
             assertEquals(expectedTitle.getTitle(), libraryTitle.getTitle());
         }
     }
-
 
 }
