@@ -11,5 +11,5 @@ Aplicar el ciclo de TDD (test, implementación, refactorización) en el desarrol
 Escribir código modular y testeable, separando claramente la lógica de negocio de los detalles de entrada/salida.
 
 ## 🧩 Explicaciones y comentarios
-- Después del primer ejercicio de todo el bloque quise reestructurar el proyecto para dividirlo bien por niveles y ejercicios y la lié. Despues de muchisimo rato inculo con la ayuda de la IA no conseguí resolverlo así que cree un proyecto nuevo y copié, pegué y adapté lo que tenía en el otro a este, perdiendo así los commits. El anterior proyecto: https://github.com/ricky-santana/S1_04_Junit_N1_eje1
+- Después del primer ejercicio de todo el bloque quise reestructurar el proyecto para dividirlo bien por niveles y ejercicios y la lié. Después de muchísimo rato incluso con la ayuda de la IA no conseguí resolverlo así que cree un proyecto nuevo y copié, pegué y adapté lo que tenía en el otro a este, perdiendo así los commits. El anterior proyecto: https://github.com/ricky-santana/S1_04_Junit_N1_eje1
 - Elminaré antiguo proyecto una vez no se necesite (por si quiere leer los commits).
