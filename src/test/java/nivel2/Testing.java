@@ -6,6 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
@@ -75,7 +76,17 @@ public class Testing {
 
         assertThat(mapToTest).containsEntry("Barça", 1);
         assertThat(mapToTest).doesNotContainEntry("Barça", 2);
+        assertThat(mapToTest).containsKey("Barça");
     }
+    @Test
+    void shouldThrowException (){
+        Integer[] list = {1, 2};
+
+        assertThatThrownBy(() -> {
+            Integer numb = list[2];})
+                .isInstanceOf(ArrayIndexOutOfBoundsException.class);
+    }
+    // OUT OF BOUNDS Aranzazu
 
     @Test
     void optionalEmpty(){
