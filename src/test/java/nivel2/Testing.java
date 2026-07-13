@@ -86,7 +86,6 @@ public class Testing {
             Integer numb = list[2];})
                 .isInstanceOf(ArrayIndexOutOfBoundsException.class);
     }
-    // OUT OF BOUNDS Aranzazu
 
     @Test
     void optionalEmpty(){
